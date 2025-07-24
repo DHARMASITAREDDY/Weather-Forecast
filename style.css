@@ -1,0 +1,150 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    transition: 0.5s;
+    background: url('https://getwallpapers.com/wallpaper/full/6/f/1/1369498-cool-best-weather-wallpaper-1920x1080-phone.jpg') no-repeat center center/cover;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+
+/* Optional hover effect for button */
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.dha p {
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+}
+
+img {
+    margin-top: 20px;
+}
+
+/* Blue-themed weather backgrounds */
+body.clear {
+    background: url('clear.jpeg') no-repeat center center/cover;
+}
+body.sunny {
+    background: url('sunny.jpg') no-repeat center center/cover;
+}
+body.rainy {
+    background: url('rainy.jpeg') no-repeat center center/cover;
+}
+body.cloudy {
+    background: url('OIP.jpeg') no-repeat center center/cover;
+}
+body.default-bg {
+    background: url('deafult.png') no-repeat center center/cover;
+}
+.container {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+   
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .dha p {
+        font-size: 18px;
+    }
+
+    input, button {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    img {
+        width: 100px;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .dha p {
+        font-size: 16px;
+    }
+
+    input, button {
+        width: 90%;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    img {
+        width: 80px;
+    }
+}
+/* Tablet Devices Only */
+@media (min-width: 600px) and (max-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.2); /* slight glass effect */
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .dha p {
+        font-size: 18px;
+    }
+
+    input, button {
+        padding: 10px;
+        font-size: 16px;
+        width: 90%;
+    }
+
+    img {
+        width: 120px;
+    }
+}
